@@ -5,3 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.inputdiv input::placeholder {
+  font-family: "Poppins", sans-serif;
+  opacity: 1; /* Firefox */
+}

@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       screens:{
@@ -14,12 +16,12 @@ module.exports = {
         xl: "1280px",
       },
       colors: {
-        lightGrey: "#F7F7F7",
+        lightGrey: "#f7F7F7",
         mediumBlue: "#257AF5",
         lightBlue: "rgb(232,241,254)",
         darkBlue: "rgb(46,50,62)",
-        superDark: "rgb(30,32,40)",
-        lightPurple: "#F5F5FC"
+        extraDark: "rgb(30,33,40)",
+        lightPurple: "#F5F5FC",
       },
     },
   },
