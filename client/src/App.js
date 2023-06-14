@@ -1,11 +1,14 @@
 import './App.css';
+import {Route, Routes} from 'react-router-dom'
+import React from 'react'
+import login from './Screens/Dashboard/login'
 
 function App() {
   return (
     <>
-      <div>
-        Hello World
-      </div>
+      <Routes>
+        <Route path = "/" element = {<login/>} />
+      </Routes>
     </>
   );
 }
