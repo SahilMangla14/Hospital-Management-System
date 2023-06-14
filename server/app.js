@@ -3,6 +3,18 @@ const {dbConnect} = require('./config/db')
 require("dotenv").config()
 const cors = require("cors");
 
+const adminRouter = require('./routes/Admins')
+const ambulanceRouter = require("./routes/Ambulances");
+const appointmentRouter = require("./routes/Appointments");
+const bedRouter = require("./routes/Beds");
+const doctorRouter = require("./routes/Doctors");
+const hospitalRouter = require("./routes/Hospitals");
+const nurseRouter = require("./routes/Nurses");
+const patientRouter = require("./routes/Patients");
+const paymentRouter = require("./routes/Payments");
+const prescriptionRouter = require("./routes/Prescriptions");
+const reportRouter = require("./routes/Reports");
+
 const app = express()
 
 app.use(express.json());
@@ -11,6 +23,9 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Homepage");
 });
+
+app.use('/admin',adminRouter);
+
 
 app.listen(process.env.PORT, async () => {
     try {
