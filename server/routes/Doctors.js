@@ -7,14 +7,14 @@ const {
     getDoctors,
     doctorRegister,
     doctorLogin,
-    updatedoctor,
-    deletedoctor
+    updateDoctor,
+    deleteDoctor
   } = require('../controllers/doctors')
 
 router.route('/').get(getDoctors)
 router.route('/register').post(doctorRegister)
 router.route('/login').post(doctorLogin)
-router.route('/:doctorId').patch(updatedoctor)
-router.route('/:doctorId').delete(deletedoctor)
+router.route('/:doctorId').patch(updateDoctor)
+router.route('/:doctorId').delete(deleteDoctor)
 
 module.exports = router

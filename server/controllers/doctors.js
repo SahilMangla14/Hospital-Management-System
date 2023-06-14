@@ -36,7 +36,7 @@ const doctorLogin = async (req, res) => {
       const doctor = await DoctorModel.findOne({ docID, password });
   
       if (doctor) {
-        const token = jwt.sign({ foo: "bar" }, process.env.key, {
+        const token = jwt.sign({ foo: "bar" }, process.env.KEY, {
           expiresIn: "24h",
         });
         res.send({ message: "Successful", user: doctor, token: token });
@@ -49,7 +49,7 @@ const doctorLogin = async (req, res) => {
     }
   }
 
-const updatedoctor = async (req, res) => {
+const updateDoctor = async (req, res) => {
     const id = req.params.doctorId;
     const payload = req.body;
     try {
@@ -67,7 +67,7 @@ const updatedoctor = async (req, res) => {
     }
   }
 
-const deletedoctor = async (req, res) => {
+const deleteDoctor = async (req, res) => {
     const id = req.params.doctorId;
     try {
       const doctor = await DoctorModel.findByIdAndDelete({ _id: id });
@@ -85,6 +85,6 @@ module.exports = {
     getDoctors,
     doctorRegister,
     doctorLogin,
-    updatedoctor,
-    deletedoctor
+    updateDoctor,
+    deleteDoctor
 }
