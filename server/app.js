@@ -25,6 +25,16 @@ app.get("/", (req, res) => {
 });
 
 app.use('/admin',adminRouter);
+// app.use("/ambulances", ambulanceRouter);
+// app.use("/appointments", appointmentRouter);
+// app.use("/beds", bedRouter);
+app.use("/doctors", doctorRouter);
+// app.use("/hospitals", hospitalRouter);
+// app.use("/nurses", nurseRouter);
+// app.use("/patients", patientRouter);
+// app.use("/payments", paymentRouter);
+// app.use("/prescriptions", prescriptionRouter);
+// app.use("/reports", reportRouter);
 
 
 app.listen(process.env.PORT, async () => {

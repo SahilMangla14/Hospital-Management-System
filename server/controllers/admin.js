@@ -1,4 +1,3 @@
-const express = require("express");
 const { AdminModel } = require("../models/adminModel");
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
@@ -7,7 +6,6 @@ const { NurseModel } = require("../models/nurseModel");
 const { DoctorModel } = require("../models/doctorModel");
 const { PatientModel } = require("../models/patientModel");
 
-const router = express.Router()
 
 const getAdmin = async (req, res) => {
     try {
