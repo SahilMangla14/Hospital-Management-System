@@ -337,7 +337,7 @@ const Sidebar = () => {
               <Link
                 className="link"
                 activeclassname="active"
-                to={"/checkappointment"}
+                to={"/updateAppointment"}
               >
                 <div className="icon">
                   <BsFillBookmarkCheckFill className="mainIcon" />
@@ -354,7 +354,7 @@ const Sidebar = () => {
               <Link
                 className="link"
                 activeclassname="active"
-                to={"/createslip"}
+                to={"/createReport"}
               >
                 <div className="icon">
                   <BiDetail className="mainIcon" />
