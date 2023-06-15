@@ -122,7 +122,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div>
+      <div className="overflow-y-visible sticky top-[70px]">
         <div style={{ width: isOpen ? "200px" : "70px" }} className={`sidebar`}>
           <div className="top_section">
             <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">
@@ -390,7 +390,7 @@ const Sidebar = () => {
               onClick={() => {
                 dispatch({ type: "AUTH_LOGOUT" });
               }}
-              to={"/"}
+              to={"/dLogin"}
             >
               <div className="icon">
                 <FiLogOut />

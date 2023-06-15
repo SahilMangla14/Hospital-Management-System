@@ -31,17 +31,17 @@ const UpdateAppointments = () => {
         disptach(GetAllAppointment());
     }, []);
 
-    // if (data?.isAuthticated === false) {
-    //     return <Navigate to={"/"} />;
-    // }
+    if (data?.isAuthticated === false) {
+        return <Navigate to={"/"} />;
+    }
 
-    // if (data?.user.userType !== "doctor") {
-    //     return <Navigate to={"/dashboard"} />;
-    // }
+    if (data?.user.userType !== "doctor") {
+        return <Navigate to={"/dashboard"} />;
+    }
     
     return (
         <>
-            <div className="h-[100vh] flex bg-[rgb(245,245,245)]">
+            <div className="flex bg-[rgb(245,245,245)]">
                 <Sidebar />
                 <div className='mt-8 w-full'>
                     <div className='w-inherit  flex items-center justify-center'>

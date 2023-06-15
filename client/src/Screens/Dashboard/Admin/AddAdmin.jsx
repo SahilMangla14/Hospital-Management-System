@@ -60,13 +60,13 @@ const AddAdmin = () => {
     });
   };
 
-  // if (data?.isAuthticated === false) {
-  //   return <Navigate to={"/"} />;
-  // }
+  if (data?.isAuthticated === false) {
+    return <Navigate to={"/"} />;
+  }
 
-  // if (data?.user.userType !== "admin") {
-  //   return <Navigate to={"/dashboard"} />;
-  // }
+  if (data?.user.userType !== "admin") {
+    return <Navigate to={"/dashboard"} />;
+  }
 
 
 

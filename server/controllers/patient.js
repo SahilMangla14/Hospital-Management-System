@@ -24,9 +24,10 @@ const patientRegister = async (req, res) => {
           id: patient.patientID,
         });
       }
+      // console.log(req.body)
       const newPatient = new PatientModel(req.body);
       await newPatient.save();
-      res.send({ id: newPatient.patientID });
+      res.send({message: "Registered"});
     } catch (error) {
       res.send({ error });
     }

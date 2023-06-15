@@ -94,7 +94,7 @@ const CreateReports = () => {
     return (
         <>
             <ToastContainer />
-            <div className='h-[100vh] flex bg-[rgb(245,245,245)]'>
+            <div className='flex bg-[rgb(245,245,245)]'>
                 <Sidebar />
                 <div className='mt-8 w-full'>
                     <div className='w-inherit  flex items-center justify-center'>

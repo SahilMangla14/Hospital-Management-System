@@ -16,6 +16,8 @@ import AddPatient from './Screens/Dashboard/Nurse/AddPatient';
 import NurseProfile from './Screens/Dashboard/Nurse/NurseProfile'
 import BookAppointment from './Screens/Dashboard/Nurse/BookAppointment';
 import DashboardStats from './Screens/Dashboard/Common/DashboardStats';
+import MainPage from './Screens/user/MainPage';
+import Login from './Screens/user/Login';
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
     //   Hello world
     // </div>
     <Routes>
-      <Route path="/" element={<DLogin />} />
+      <Route path='/' element={<MainPage/>} />
+      <Route path='/login' element={<Login/>} />
+      <Route path="/dLogin" element={<DLogin />} />
       <Route path="/admin" element={<AddAdmin />} />
       <Route path="/addDoctor" element={<AddDoctor/>} />
       <Route path="/addNurse" element={<AddNurse/>} />
