@@ -12,6 +12,9 @@ import Reports from './Screens/Dashboard/Doctor/Reports';
 import UpdateAppointments from './Screens/Dashboard/Doctor/UpdateAppointments';
 import CreateReport from './Screens/Dashboard/Doctor/CreateReports';
 import DoctorProfile from './Screens/Dashboard/Doctor/DoctorProfile';
+import AddPatient from './Screens/Dashboard/Nurse/AddPatient';
+import NurseProfile from './Screens/Dashboard/Nurse/NurseProfile'
+import BookAppointment from './Screens/Dashboard/Nurse/BookAppointment';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
       <Route path="/updateAppointment" element={<UpdateAppointments/>} />
       <Route path="/createReport" element={<CreateReport/>} />
       <Route path="/doctorProfile" element={<DoctorProfile/>} />
+      <Route path="/addPatient" element={<AddPatient/>} />
+      <Route path="/nurseProfile" element={<NurseProfile/>} />
+      <Route path="/bookAppointment" element={<BookAppointment/>} />
 
     </Routes>
   );

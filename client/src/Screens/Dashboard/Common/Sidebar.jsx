@@ -152,7 +152,7 @@ const Sidebar = () => {
               <Link
                 className="link"
                 activeclassname="active"
-                to={"/nurseprofile"}
+                to={"/nurseProfile"}
               >
                 <div className="icon">
                   <CgProfile className="mainIcon" />
@@ -169,7 +169,7 @@ const Sidebar = () => {
               <Link
                 className="link"
                 activeclassname="active"
-                to={"/addpatient"}
+                to={"/addPatient"}
               >
                 <div className="icon">
                   <FaHospitalUser className="mainIcon" />
@@ -187,7 +187,7 @@ const Sidebar = () => {
               <Link
                 className="link"
                 activeclassname="active"
-                to={"/bookappointment"}
+                to={"/bookAppointment"}
               >
                 <div className="icon">
                   <BsBookmarkPlus className="mainIcon" />
