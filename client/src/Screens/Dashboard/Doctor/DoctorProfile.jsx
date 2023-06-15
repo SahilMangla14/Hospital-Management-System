@@ -121,7 +121,7 @@ const DoctorProfile = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-2/3 h-full border border-black bg-white px-10">
+                            <div className="w-2/3 h-full shadow-2xl bg-white px-10">
                                 <h1 className="w-full text-center font-bold text-3xl my-3">Other Info</h1>
 
                                 <div className="w-full bg-[rgb(245,245,245)] mb-3 rounded-xl h-[40px] px-3 flex">

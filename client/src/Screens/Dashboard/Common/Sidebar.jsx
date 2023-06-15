@@ -109,7 +109,7 @@ import { useDispatch, useSelector } from "react-redux";
 import './Sidebar.css'
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const dispatch = useDispatch();
 
   const {
@@ -117,7 +117,7 @@ const Sidebar = () => {
   } = useSelector((state) => state.auth);
 
   function toggle() {
-    setIsOpen(!isOpen);
+    setIsOpen(isOpen);
   }
 
   return (

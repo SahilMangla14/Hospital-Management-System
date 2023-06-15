@@ -65,7 +65,7 @@ const AddAmbulance = () => {
                         <h1 className='font-bold border py-3 px-12 text-3xl rounded-xl bg-[rgb(0,21,41)] text-white'>Health Care</h1>
                     </div>
                     <div className='mt-6 flex items-center justify-center'>
-                        <div className='border border-black bg-white w-[80%] rounded-lg'>
+                        <div className='shadow-2xl bg-white w-[80%] rounded-lg'>
                             <form onSubmit={HandleAmbuSubmit}>
                                 <div className='flex mx-10 my-3'>
                                     <h3 className='flex items-center font-bold w-[21%] '>Ambulance Type</h3>

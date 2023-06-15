@@ -15,6 +15,7 @@ import DoctorProfile from './Screens/Dashboard/Doctor/DoctorProfile';
 import AddPatient from './Screens/Dashboard/Nurse/AddPatient';
 import NurseProfile from './Screens/Dashboard/Nurse/NurseProfile'
 import BookAppointment from './Screens/Dashboard/Nurse/BookAppointment';
+import DashboardStats from './Screens/Dashboard/Common/DashboardStats';
 
 function App() {
   return (
@@ -36,8 +37,8 @@ function App() {
       <Route path="/addPatient" element={<AddPatient/>} />
       <Route path="/nurseProfile" element={<NurseProfile/>} />
       <Route path="/bookAppointment" element={<BookAppointment/>} />
-
-    </Routes>
+      <Route path="/dashboard" element={<DashboardStats/>}></Route>
+    </Routes> 
   );
 }
 

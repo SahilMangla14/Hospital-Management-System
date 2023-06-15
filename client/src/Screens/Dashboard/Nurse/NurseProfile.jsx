@@ -72,7 +72,7 @@ const NurseProfile = () => {
                         <h1 className='font-bold border py-3 px-12 text-3xl rounded-xl bg-[rgb(0,21,41)] text-white'>Profile</h1>
                     </div>
                     <div className="w-full h-[600px]  flex justify-center items-center">
-                        <div className="h-[80%] w-[80%]  flex rounded-xl">
+                        <div className="h-[80%] w-[80%]  flex rounded-xl shadow-2xl">
                             <div className="w-1/3 h-full  flex flex-col items-center justify-center bg-[rgb(0,21,41)]">
                                 <div className="w-full h-1/2 flex justify-center items-center">
                                     <img src={admin} alt="" className="h-[200px] w-[200px]" />
@@ -114,7 +114,7 @@ const NurseProfile = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-2/3 h-full border border-black bg-white px-10">
+                            <div className="w-2/3 h-full  bg-white px-10">
                                 <h1 className="w-full text-center font-bold text-3xl my-3">Other Info</h1>
 
                                 <div className="w-full bg-[rgb(245,245,245)] mb-3 rounded-xl h-[40px] px-3 flex">

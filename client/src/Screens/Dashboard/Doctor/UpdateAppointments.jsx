@@ -48,7 +48,7 @@ const UpdateAppointments = () => {
                         <h1 className='font-bold border py-3 px-12 text-3xl rounded-xl bg-[rgb(0,21,41)] text-white'>Health Care</h1>
                     </div>
                     <div className="w-inherit  mx-10 mt-3">
-                        <table className="w-full border border-black">
+                        <table className="w-full shadow-2xl">
                             <thead className="bg-[rgb(0,21,41)] text-white font-bold">
                                 <tr>
                                     <th className="py-3">Patient Name</th>

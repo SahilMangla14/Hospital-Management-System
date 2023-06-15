@@ -173,7 +173,7 @@ const AddPatient = () => {
                         <h1 className='font-bold border py-3 px-12 text-3xl rounded-xl bg-[rgb(0,21,41)] text-white'>Health Care</h1>
                     </div>
                     <div className='mt-6 flex items-center justify-center'>
-                        <div className='border border-black bg-white w-[80%] rounded-lg'>
+                        <div className=' bg-white w-[80%] rounded-lg shadow-2xl'>
                             <form onSubmit={HandleOnsubmitAppointment}>
                                 <div className='flex mx-10 my-3'>
                                     <h3 className='flex items-center font-bold w-[21%] '>Patient Name</h3>

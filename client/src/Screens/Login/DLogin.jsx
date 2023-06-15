@@ -158,7 +158,7 @@ const DLogin = () => {
     <>
       <ToastContainer />
       <div className='h-[100vh] w-[100vw] bg-mediumBlue flex items-center justify-center'>
-        <div className='h-[60%] w-[60%]  rounded-2xl bg-lightGrey flex '>
+        <div className='h-[60%] w-[60%]  rounded-2xl bg-lightGrey flex shadow-2xl'>
           <div className='w-1/2 h-full rounded-2xl bg-lightGrey flex justify-center items-center'>
             <div>
               <div>
