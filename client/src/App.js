@@ -11,6 +11,8 @@ import Availability from './Screens/Dashboard/Admin/Availability';
 import Reports from './Screens/Dashboard/Doctor/Reports';
 import UpdateAppointments from './Screens/Dashboard/Doctor/UpdateAppointments';
 import CreateReport from './Screens/Dashboard/Doctor/CreateReports';
+import DoctorProfile from './Screens/Dashboard/Doctor/DoctorProfile';
+
 function App() {
   return (
     // <div className="ml-3">
@@ -27,6 +29,7 @@ function App() {
       <Route path="/reports" element={<Reports/>} />
       <Route path="/updateAppointment" element={<UpdateAppointments/>} />
       <Route path="/createReport" element={<CreateReport/>} />
+      <Route path="/doctorProfile" element={<DoctorProfile/>} />
 
     </Routes>
   );

@@ -296,7 +296,7 @@ const Sidebar = () => {
               <Link
                 className="link"
                 activeclassname="active"
-                to={"/doctorprofile"}
+                to={"/doctorProfile"}
               >
                 <div className="icon">
                   <SlUserFollow className="mainIcon" />
