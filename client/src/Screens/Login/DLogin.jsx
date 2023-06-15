@@ -12,7 +12,7 @@ import {
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Drawer } from "antd";
-import { admin } from '../../assets/index'
+import { admin2 } from '../../assets/index'
 
 const notify = (text) => toast(text);
 
@@ -192,10 +192,10 @@ const DLogin = () => {
                 </Radio.Group>
               </div>
               <div className='flex items-center justify-center pt-1'>
-                <img src={admin} alt="admin" className='h-[100px] w-[100px]' />
+                <img src={admin2} alt="admin" className='h-[80px] w-[80px]' />
               </div>
             </div>
-            <div className='mt-5 flex items-center justify-center'>
+            <div className='mt-3  flex items-center justify-center'>
               <form onSubmit={HandleSubmit} >
                 <h3 className='flex justify-center items-center font-bold mt-1 mb-2'>{placement} ID</h3>
                 <input

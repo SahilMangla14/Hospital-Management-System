@@ -5,7 +5,7 @@ import Sidebar from '../Common/Sidebar'
 import { Button, message, Modal } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
-import { admin } from '../../../assets/index'
+import { admin2 } from '../../../assets/index'
 import { AiFillCalendar, AiFillEdit } from "react-icons/ai";
 
 const NurseProfile = () => {
@@ -75,7 +75,7 @@ const NurseProfile = () => {
                         <div className="h-[80%] w-[80%]  flex rounded-xl shadow-2xl">
                             <div className="w-1/3 h-full  flex flex-col items-center justify-center bg-[rgb(0,21,41)]">
                                 <div className="w-full h-1/2 flex justify-center items-center">
-                                    <img src={admin} alt="" className="h-[200px] w-[200px]" />
+                                    <img src={admin2} alt="" className="h-[200px] w-[200px]" />
                                 </div>
                                 <div className="h-1/2 w-full  rounded-xl">
                                     <div className="px-5  w-full h-full py-3">
