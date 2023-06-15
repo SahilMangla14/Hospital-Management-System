@@ -71,10 +71,10 @@ const AddAdmin = () => {
 
 
   return (
-    <>
+    <div>
       <ToastContainer />
-      <div className='h-[100vh] flex bg-[rgb(245,245,245)]'>
-        <Sidebar />
+      <div className='flex bg-[rgb(245,245,245)]'>
+        <Sidebar/>
         <div className='mt-8 w-full'>
           <div className='w-inherit  flex items-center justify-center'>
             <h1 className='font-bold border py-3 px-12 text-3xl rounded-xl bg-[rgb(0,21,41)] text-white'>Health Care</h1>
@@ -137,7 +137,7 @@ const AddAdmin = () => {
                     value={AdminValue.gender}
                     onChange={HandleDoctorChange}
                     required
-                    className='bg-[rgb(245,245,245)] w-[80%] h-[50px]'
+                    className='bg-[rgb(245,245,245)] w-[80%] h-[50px] pl-2 text-[#A8A3AF]'
                   >
                     <option value="Choose Gender ">Choose Gender</option>
                     <option value="Male" >Male</option>
@@ -204,7 +204,7 @@ const AddAdmin = () => {
         </div>
 
       </div>
-    </>
+    </div>
   )
 }
 

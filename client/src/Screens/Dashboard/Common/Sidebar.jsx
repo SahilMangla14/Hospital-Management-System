@@ -122,7 +122,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div >
+      <div>
         <div style={{ width: isOpen ? "200px" : "70px" }} className={`sidebar`}>
           <div className="top_section">
             <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">
@@ -201,7 +201,7 @@ const Sidebar = () => {
               </Link>
             ) : null}
             {user?.userType === "admin" ? (
-              <Link className="link" activeclassname="active" to={"/addoctor"}>
+              <Link className="link" activeclassname="active" to={"/addDoctor"}>
                 <div className="icon">
                   <AiOutlineUserAdd className="mainIcon" />
                 </div>
@@ -214,7 +214,7 @@ const Sidebar = () => {
               </Link>
             ) : null}
             {user?.userType === "admin" ? (
-              <Link className="link" activeclassname="active" to={"/addnurse"}>
+              <Link className="link" activeclassname="active" to={"/addNurse"}>
                 <div className="icon">
                   <GiNurseFemale className="mainIcon" />
                 </div>
@@ -244,7 +244,7 @@ const Sidebar = () => {
             ) : null}
 
             {user?.userType === "admin" ? (
-              <Link className="link" activeclassname="active" to={"/addbeds"}>
+              <Link className="link" activeclassname="active" to={"/addBeds"}>
                 <div className="icon">
                   <TbBed className="mainIcon" />
                 </div>
