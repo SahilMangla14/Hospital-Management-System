@@ -59,6 +59,7 @@ export const AddPatients = (data) => async (dispatch) => {
       "http://localhost:5000/patients/register",
       data
     );
+    console.log("response",data)
     return res.data;
     // dispatch({
     //   type: types.ADD_PATIENT_SUCCESS,

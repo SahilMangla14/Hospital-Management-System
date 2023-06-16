@@ -53,9 +53,9 @@ const NavBar = () => {
                             Patient Login
                         </Link2>
                     )}
-                </div>
+                </div> */}
 
-                <div className='mr-5 font-md text-gray-400 cursor-pointer'>
+                {/* <div className='mr-5 font-md text-gray-400 cursor-pointer'>
                     Reports
                 </div> */}
             </div>

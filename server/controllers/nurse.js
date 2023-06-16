@@ -23,6 +23,7 @@ const nurseRegister =  async (req, res) => {
         });
       }
       let value = new NurseModel(req.body);
+      // console.log(value)
       await value.save();
       const data = await NurseModel.findOne({ email });
       return res.send({ data, message: "Registered" });

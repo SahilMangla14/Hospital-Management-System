@@ -38,7 +38,7 @@ const UpdateAppointments = () => {
     if (data?.user.userType !== "doctor") {
         return <Navigate to={"/dashboard"} />;
     }
-    
+
     return (
         <>
             <div className="flex bg-[rgb(245,245,245)]">
@@ -59,36 +59,36 @@ const UpdateAppointments = () => {
                                     <th className="py-3">Resolve</th>
                                 </tr>
                             </thead>
-
+                            <tbody className="font-bold text-center">
+                                {AllAppointment?.map((ele) => {
+                                    return (
+                                        <tr>
+                                            <td className="py-3">{ele.patientName}</td>
+                                            <td>{ele.mobile}</td>
+                                            <td>{ele.disease}</td>
+                                            <td>{ele.department}</td>
+                                            <td>{ele.date}</td>
+                                            <td>
+                                                <button
+                                                    style={{
+                                                        border: "none",
+                                                        color: "red",
+                                                        outline: "none",
+                                                        background: "transparent",
+                                                        cursor: "pointer",
+                                                    }}
+                                                    onClick={() => DeleteAppoint(ele._id)}
+                                                >
+                                                    Delete
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    );
+                                })}
+                            </tbody>
                         </table>
                         {/* <Table columns={columns} dataSource={data} className="w-full " /> */}
-                        <tbody className="font-bold text-center">
-                            {AllAppointment?.map((ele) => {
-                                return (
-                                    <tr>
-                                        <td className="py-3">{ele.patientName}</td>
-                                        <td>{ele.mobile}</td>
-                                        <td>{ele.disease}</td>
-                                        <td>{ele.department}</td>
-                                        <td>{ele.date}</td>
-                                        <td>
-                                            <button
-                                                style={{
-                                                    border: "none",
-                                                    color: "red",
-                                                    outline: "none",
-                                                    background: "transparent",
-                                                    cursor: "pointer",
-                                                }}
-                                                onClick={() => DeleteAppoint(ele._id)}
-                                            >
-                                                Delete
-                                            </button>
-                                        </td>
-                                    </tr>
-                                );
-                            })}
-                        </tbody>
+
                     </div>
                 </div>
             </div>

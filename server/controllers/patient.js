@@ -15,6 +15,7 @@ const getAllPatients = async (req, res) => {
   }
 
 const patientRegister = async (req, res) => {
+    // console.log("SERVER : " ,req.body)
     const { email } = req.body;
     try {
       const patient = await PatientModel.findOne({ email });
@@ -24,10 +25,12 @@ const patientRegister = async (req, res) => {
           id: patient.patientID,
         });
       }
-      // console.log(req.body)
       const newPatient = new PatientModel(req.body);
       await newPatient.save();
-      res.send({message: "Registered"});
+      // console.log("Server : ",req.body)
+      // console.log("NEW PATIENT :", newPatient)
+      const data = await NurseModel.findOne({ email });
+      res.send({data , message: "Registered"});
     } catch (error) {
       res.send({ error });
     }

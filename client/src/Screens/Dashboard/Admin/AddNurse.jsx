@@ -41,6 +41,7 @@ const AddNurse = () => {
     const HandleDoctorSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
+        console.log("Hello",NurseValue)
         dispatch(NurseRegister(NurseValue)).then((res) => {
             if (res.message === "Nures already exists") {
                 setLoading(false);

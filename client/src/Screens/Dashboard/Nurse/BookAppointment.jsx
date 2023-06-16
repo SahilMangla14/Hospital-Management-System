@@ -23,6 +23,7 @@ const BookAppointment = () => {
         address: "",
         email: "",
         department: "",
+        patientID: Date.now(),
         date: "",
         time: "",
     };
@@ -40,12 +41,14 @@ const BookAppointment = () => {
             return notify("Please fill all the Details");
         }
         setLoading(true);
-        dispatch(AddPatients({ ...BookAppoint, patientId: Date.now() })).then(
+        // console.log("Hello",BookAppoint)
+        dispatch(AddPatients(BookAppoint)).then(
             (res) => {
                 let data = {
                     ...BookAppoint,
-                    patientId: res.id,
+                    // patientID: res.id,
                 };
+                // console.log("HELLO", data.patientID)
                 dispatch(CreateBooking(data));
                 notify("Appointment Booked");
                 setLoading(false);
