@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import Home from './Home'
 import About from './About'
 import Services from './Services'
+import Faq from './Faq'
 const MainPage = () => {
     return (
         <>
@@ -13,6 +14,7 @@ const MainPage = () => {
                     <Home />
                     <About />
                     <Services />
+                    <Faq />
                 </div>
             </div>
 

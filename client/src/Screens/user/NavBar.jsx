@@ -16,13 +16,16 @@ const NavBar = () => {
             <ToastContainer/>
             <div id="navbar" className='h-[30px] w-full flex justify-center items-center pt-10 mb-10'>
                 <div className='mr-5 font-md text-gray-400 cursor-pointer'>
-                    <Link to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
+                    <Link to="home" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
                 </div>
                 <div className='mr-5 font-md text-gray-400 cursor-pointer'>
-                    <Link to="about" spy={true} smooth={true} offset={50} duration={500}>About Us</Link>
+                    <Link to="about" spy={true} smooth={true} offset={0} duration={500}>About Us</Link>
                 </div>
                 <div className='mr-5 font-md text-gray-400 cursor-pointer'>
-                    <Link to="services" spy={true} smooth={true} offset={50} duration={500}>Services</Link>
+                    <Link to="services" spy={true} smooth={true} offset={0} duration={500}>Services</Link>
+                </div>
+                <div className='mr-5 font-md text-gray-400 cursor-pointer'>
+                    <Link to="faq" spy={true} smooth={true} offset={0} duration={500}>FAQ</Link>
                 </div>
                 <div className='mr-5 font-md text-gray-400 cursor-pointer'>
                     <Link2
