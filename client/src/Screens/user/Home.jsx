@@ -11,7 +11,7 @@ const Home = () => {
                             Welcome to
                         </h1>
                         <h1 className='text-[50px] font-bold'>
-                            Health And Care
+                            MEDICARE
                         </h1>
                     </div>
                     <div className='w-1/2 h-full pt-3'>
